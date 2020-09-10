@@ -1,14 +1,14 @@
-# Cypress
+# :alien: Cypress :alien:
 
 Test automation project using Cypress for Front-end Web and Back-end tests. We will use the http://automationpractice.com/index.php?controller=authentication&back=my-account environment to perform the tests on the Front-end, you can switch to any other environment that you want.
 
-## Technologies
+## :point_right: Technologies :point_left:	
 
 - Node.js
 - JavaScript
 - Cypress
 
-## Setting up the environment:
+## :man_technologist:	Setting up the environment :woman_technologist:	
 
 1. Install Node.js.
 
