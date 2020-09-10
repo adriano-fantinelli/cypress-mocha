@@ -1,16 +1,22 @@
 # Cypress
 
-Projeto de automação de testes utilizando Cypress para testes de Front-end Web e Back-end. Vamos utilizar o ambiente http://automationpractice.com/index.php?controller=authentication&back=my-account para realizar os teste no Front-end.
+Test automation project using Cypress for Front-end Web and Back-end tests. We will use the http://automationpractice.com/index.php?controller=authentication&back=my-account environment to perform the tests on the Front-end, you can switch to any other environment that you want.
 
-## Configurando o ambiente:
+## Technologies
 
-1. Instalar o Node.js.
+- Node.js
+- JavaScript
+- Cypress
 
-2. É necessário instalar o cypress, digite no terminal: 
+## Setting up the environment:
+
+1. Install Node.js.
+
+2. It is necessary to install Cypress, type on the command prompt:
 ```
 npm install cypress
 ```
-3. Para abrir a execução dos testes utilize o comando:
+3. To open the execution of the tests use: 
 ```
 npx cypress open
 ```
