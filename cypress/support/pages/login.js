@@ -1,7 +1,7 @@
 class LoginPage{
-    preencherLogin(email, senha){
+    login(email, password){
         cy.get('#email').type(email)
-        cy.get('#passwd').type(senha)
+        cy.get('#passwd').type(password)
         cy.get('#SubmitLogin > span').click()
     }
 }

@@ -1,14 +1,18 @@
 {
-  "loginSucesso":{
+  
+  "loginSuccess":{
     "email": "novoemailteste@gmail.com", 
-    "senha": "teste123"
+    "password": "teste123"
   },
-  "loginSemSucessoEmailInvalido":{
+  
+  "loginWithoutSuccessInvalidEmail":{
     "email": "emailinvalido@gmail.com", 
-    "senha": "teste123"
+    "password": "teste123"
   },
-  "loginSemSucessoSenhaInvalida":{
+  
+  "loginWithoutSuccessInvalidPassword":{
     "email": "novoemailteste@gmail.com", 
-    "senha": "senhainvalida"
+    "password": "passwordinvalida"
   }
+
 }

@@ -1,28 +1,27 @@
 /// <reference types="cypress" />
 import LoginPage from "../../support/pages/login";
 
-// Traduzir para o inglês
-context('Fazer login', () => {
-    let dadosLogin
+context('Login', () => {
+    let dataLogin
     beforeEach(() => {
         cy.fixture('login.json').then( d => {
-            dadosLogin = d
+            dataLogin = d
         })
         cy.visit("/")
     })
 
-    it('Deve realizar um login com sucesso', () => {
-        LoginPage.preencherLogin(dadosLogin.loginSucesso.email, dadosLogin.loginSucesso.senha)
+    it('Must login successfully', () => {
+        LoginPage.login(dataLogin.loginSuccess.email, dataLogin.loginSuccess.password)
         cy.get('.account > span').should('have.text', 'Automação Teste')
     })
 
-    it('Deve realizar um login sem sucesso com um email inválido', () => {
-        LoginPage.preencherLogin(dadosLogin.loginSemSucessoEmailInvalido.email, dadosLogin.loginSemSucessoEmailInvalido.senha)
+    it('Must login without success and with an incorrect email', () => {
+        LoginPage.login(dataLogin.loginWithoutSuccessInvalidEmail.email, dataLogin.loginWithoutSuccessInvalidEmail.password)
         cy.get('ol > li').should('have.text', 'Authentication failed.')
     })
 
-    it('Deve realizar um login sem sucesso com um email valido', () => {
-        LoginPage.preencherLogin(dadosLogin.loginSemSucessoSenhaInvalida.email, dadosLogin.loginSemSucessoSenhaInvalida.senha)
+    it('Must login without sucess and with an incorrect password', () => {
+        LoginPage.login(dataLogin.loginWithoutSuccessInvalidPassword.email, dataLogin.loginWithoutSuccessInvalidPassword.password)
         cy.get('ol > li').should('have.text', 'Authentication failed.')
     })
 
