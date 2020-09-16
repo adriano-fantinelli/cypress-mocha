@@ -24,5 +24,4 @@ context('Login', () => {
         LoginPage.login(dataLogin.loginWithoutSuccessInvalidPassword.email, dataLogin.loginWithoutSuccessInvalidPassword.password)
         cy.get('ol > li').should('have.text', 'Authentication failed.')
     })
-
 })
