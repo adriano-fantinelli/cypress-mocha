@@ -14,14 +14,14 @@ Cypress.Commands.add("postActivityApi", (id, title, dueDate, completed) => {
         method: "POST",
         url: `${Cypress.env("activitiesUrl")}`,
         headers: {
-            accept: "application/json",
+            accept: "text/plain",
             "content-type": "application/json"
         },
         body: {
-            "ID": id,
-            "Title": title,
-            "DueDate": dueDate,
-            "Completed": completed
+            "id": id,
+            "title": title,
+            "dueDate": dueDate,
+            "completed": completed
         }
     })
 })

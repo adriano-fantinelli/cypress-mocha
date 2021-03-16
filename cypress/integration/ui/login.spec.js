@@ -12,7 +12,7 @@ context('Login', () => {
 
     it('Must login successfully', () => {
         LoginPage.login(dataLogin.loginSuccess.email, dataLogin.loginSuccess.password)
-        cy.get('.account > span').should('have.text', 'Automação Teste')
+        cy.get('.account > span').should('have.text', 'Novo email')
     })
 
     it('Must login without success and with an incorrect email', () => {

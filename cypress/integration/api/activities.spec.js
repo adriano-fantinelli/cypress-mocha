@@ -1,54 +1,45 @@
 /// <reference types="cypress" />
 
+import activitySchema from '../../contracts/activity.contract'
 import activitiesSchema from '../../contracts/activities.contract'
 
 context('Activities', () => {
-
-    let createActivity
-    let editActivity
-    let ID = 30;
-
     beforeEach(() => {
-        cy.fixture('createActivity.json').then( c => {
-            createActivity = c
-        })
-
-        cy.fixture('createActivity.json').then( e => {
-            editActivity = e
-        })
+      cy.fixture('createActivity').as('createActivity')
+      cy.fixture('editActivity').as('editActivity')
     })
 
-    it('Search for all activities', () => {
-        cy.getActivitiesApi().should((response) => {
-            expect(response.status).to.eq(200)
-            activitiesSchema.validateAsync(response.body)
+    it('Search for all activities', function() {
+        cy.getActivitiesApi().then((response) => {
+          expect(response.status).to.eq(200)
+          activitiesSchema.validateAsync(response.body)
         })
     })
 
-    it('Create an activity', () => {
-        cy.postActivityApi(createActivity.ID, createActivity.Title, createActivity.DueDate, createActivity.Completed).should((response) => {
-            expect(response.status).to.eq(200)
-            activitiesSchema.validateAsync(response.body)
-        })     
+    it('Create an activity', function() {
+      cy.postActivityApi(this.createActivity.ID, this.createActivity.Title, this.createActivity.DueDate, this.createActivity.Completed).then((response) => {
+        expect(response.status).to.eq(200)
+        activitySchema.validateAsync(response.body)
+      })
     })
 
-    it('Delete an activity', () => {
-        cy.deleteActivityApi(ID).should((response) => {
+    it('Delete an activity', function() {
+        cy.deleteActivityApi(30).then((response) => {
             expect(response.status).to.eq(200)
         })
     })
 
-    it('Search for an specific activity', () => {
-        cy.getActivityApi(ID).should((response) => {
+    it('Search for an specific activity', function() {
+        cy.getActivityApi(30).then((response) => {
             expect(response.status).to.eq(200)
-            activitiesSchema.validateAsync(response.body)
+            activitySchema.validateAsync(response.body)
         })
     })
 
-    it('Edit an activity', () => {
-        cy.putActivityApi(editActivity.ID, editActivity.Title, editActivity.DueDate, editActivity.Completed).should((response) => {
+    it('Edit an activity', function() {
+        cy.putActivityApi(this.editActivity.ID, this.editActivity.Title, this.editActivity.DueDate, this.editActivity.Completed).then((response) => {
             expect(response.status).to.eq(200)
-            activitiesSchema.validateAsync(response.body)
+            activitySchema.validateAsync(response.body)
         })     
     })
 })

@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "cypress": "^5.1.0",
-    "joi": "^17.2.1",
+    "joi": "^17.4.0",
     "mocha": "^8.1.3",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
