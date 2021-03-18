@@ -2,26 +2,23 @@
 import LoginPage from "../../support/pages/login";
 
 context('Login', () => {
-    let dataLogin
     beforeEach(() => {
-        cy.fixture('login.json').then( d => {
-            dataLogin = d
-        })
+        cy.fixture('login').as('login')
         cy.visit("/")
     })
 
-    it('Must login successfully', () => {
-        LoginPage.login(dataLogin.loginSuccess.email, dataLogin.loginSuccess.password)
+    it('Must login successfully', function() {
+        LoginPage.login(this.login.loginSuccess.email, this.login.loginSuccess.password)
         cy.get('.account > span').should('have.text', 'Novo email')
     })
 
-    it('Must login without success and with an incorrect email', () => {
-        LoginPage.login(dataLogin.loginWithoutSuccessInvalidEmail.email, dataLogin.loginWithoutSuccessInvalidEmail.password)
+    it('Must login without success and with an incorrect email', function() {
+        LoginPage.login(this.login.loginWithoutSuccessInvalidEmail.email, this.login.loginWithoutSuccessInvalidEmail.password)
         cy.get('ol > li').should('have.text', 'Authentication failed.')
     })
 
-    it('Must login without sucess and with an incorrect password', () => {
-        LoginPage.login(dataLogin.loginWithoutSuccessInvalidPassword.email, dataLogin.loginWithoutSuccessInvalidPassword.password)
+    it('Must login without sucess and with an incorrect password', function() {
+        LoginPage.login(this.login.loginWithoutSuccessInvalidPassword.email, this.login.loginWithoutSuccessInvalidPassword.password)
         cy.get('ol > li').should('have.text', 'Authentication failed.')
     })
 })

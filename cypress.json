@@ -3,6 +3,8 @@
     "env": {
         "activitiesUrl": "http://fakerestapi.azurewebsites.net/api/v1/Activities"
     },
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/report/mochawesome-report",
