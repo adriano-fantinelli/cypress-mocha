@@ -15,8 +15,11 @@ Test automation project using Cypress for Front-end Web and Back-end tests. We w
 2. It is necessary to install Cypress, type on the command prompt:
 ```
 npm install cypress
+3. To create the file package.json, type:
 ```
-3. To open the execution of the tests use: 
+npm init
+```
+4. To open the execution of the tests use: 
 ```
 npx cypress open
 ```
