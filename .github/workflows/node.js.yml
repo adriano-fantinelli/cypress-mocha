@@ -6,7 +6,7 @@ on:
       amb:
         description: 'Selecionar algum destes ambientes: dev / hlg / prd'
         required: false
-        default: 'dev'
+        default: 'hlg'
       browser:
         description: 'Selecionar algum destes browsers: chrome / electron'
         required: false
