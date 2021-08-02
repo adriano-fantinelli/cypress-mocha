@@ -1,31 +1,47 @@
-# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Execução automação de testes
 
 on:
-  push:
-    branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      amb:
+        description: 'Selecionar algum destes ambientes: dev / hlg / prd'
+        required: false
+        default: 'dev'
+      browser:
+        description: 'Selecionar algum destes browsers: chrome / electron'
+        required: false
+        default: 'chrome'
+      tag:
+        description: 'Selecionar alguma tag, por exemplo: @regressivo / @smoke / @login'
+        required: false
+        default: '@regressivo'
   pull_request:
-    branches: [ master ]
+    branches: [ master, release/develop ]
+  schedule:
+    - cron: "55 16 * * *"
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+  test:
+    name: Cypress run
+    runs-on: self-hosted
+    container: cypress/browsers:node14.16.0-chrome90-ff88
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+      - uses: actions/checkout@v2
+      - name: Cypress run 
+        uses: cypress-io/github-action@v2
+        with: 
+          command: npx cypress run --config-file config/${{github.event.inputs.amb}}.json --browser ${{github.event.inputs.browser}} --env grepTags=${{github.event.inputs.tag}}
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
