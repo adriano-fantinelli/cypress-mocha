@@ -1,7 +1,8 @@
 {
     "baseUrl" : "http://producao.com.br",
     "env": {
-        "activitiesUrl": "http://producao.com.br"
+        "activitiesUrl": "http://producao.com.br",
+        "allure": true
     },
     "viewportWidth": 1920,
     "viewportHeight": 1080,
