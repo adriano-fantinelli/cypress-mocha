@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://adriano-fantinelli.github.io/cypress-javascript-automation",
+  "buildOrder" : 11,
+  "buildName" : "GitHub Actions Run #1094010141",
+  "buildUrl" : "https://github.com/adriano-fantinelli/cypress-javascript-automation/actions/runs/1094010141",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://adriano-fantinelli.github.io/cypress-javascript-automation/11/"
+} ]
