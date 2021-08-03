@@ -18,19 +18,24 @@ on:
   pull_request:
     branches: [ master, release/develop ]
   schedule:
-    - cron: "55 16 * * *"
+    - cron: "0 0 * * *"
+    
+env:
+  DEFAULT_AMB: "hlg"
+  DEFAULT_BROWSER: "chrome"
+  DEFAULT_TAG: "@regressivo"
 
 jobs:
   test:
     name: Cypress run
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     container: cypress/browsers:node14.16.0-chrome90-ff88
     steps:
       - uses: actions/checkout@v2
       - name: Cypress run 
         uses: cypress-io/github-action@v2
         with: 
-          command: npx cypress run --config-file config/${{github.event.inputs.amb}}.json --browser ${{github.event.inputs.browser}} --env grepTags=${{github.event.inputs.tag}}
+          command: npx cypress run --config-file config/${{github.event.inputs.amb || env.DEFAULT_AMB}}.json --browser ${{github.event.inputs.browser || env.DEFAULT_BROWSER}} --env grepTags=${{github.event.inputs.tag || env.DEFAULT_TAG}}
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
