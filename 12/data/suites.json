@@ -1,0 +1,74 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Activities",
+    "children" : [ {
+      "name" : "Search for all activities",
+      "uid" : "bb18436a5fa7d5ae",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627997591864,
+        "stop" : 1627997592625,
+        "duration" : 761
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create an activity",
+      "uid" : "33a3cd1123120ab8",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627997592631,
+        "stop" : 1627997592885,
+        "duration" : 254
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete an activity",
+      "uid" : "53030da682c4fb03",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627997592888,
+        "stop" : 1627997593111,
+        "duration" : 223
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Search for an specific activity",
+      "uid" : "3d72ddf72e65fcf3",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627997593119,
+        "stop" : 1627997593324,
+        "duration" : 205
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Edit an activity",
+      "uid" : "d5a6d5e4913b1cdb",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627997593330,
+        "stop" : 1627997593541,
+        "duration" : 211
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2cd4d131100abe63102ae5294f4df98e"
+  } ],
+  "name" : "suites"
+}

@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Aug 03 13:04:24 GMT 2021","Tue Aug 03 13:04:25 GMT 2021","791","","Activities","","","","Search for all activities",""
-"passed","Tue Aug 03 13:04:26 GMT 2021","Tue Aug 03 13:04:26 GMT 2021","232","","Activities","","","","Search for an specific activity",""
-"passed","Tue Aug 03 13:04:26 GMT 2021","Tue Aug 03 13:04:26 GMT 2021","330","","Activities","","","","Delete an activity",""
-"passed","Tue Aug 03 13:04:25 GMT 2021","Tue Aug 03 13:04:26 GMT 2021","248","","Activities","","","","Create an activity",""
-"passed","Tue Aug 03 13:04:26 GMT 2021","Tue Aug 03 13:04:26 GMT 2021","193","","Activities","","","","Edit an activity",""

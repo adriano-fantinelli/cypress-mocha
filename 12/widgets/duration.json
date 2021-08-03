@@ -1,0 +1,51 @@
+[ {
+  "uid" : "d5a6d5e4913b1cdb",
+  "name" : "Edit an activity",
+  "time" : {
+    "start" : 1627997593330,
+    "stop" : 1627997593541,
+    "duration" : 211
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb18436a5fa7d5ae",
+  "name" : "Search for all activities",
+  "time" : {
+    "start" : 1627997591864,
+    "stop" : 1627997592625,
+    "duration" : 761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33a3cd1123120ab8",
+  "name" : "Create an activity",
+  "time" : {
+    "start" : 1627997592631,
+    "stop" : 1627997592885,
+    "duration" : 254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d72ddf72e65fcf3",
+  "name" : "Search for an specific activity",
+  "time" : {
+    "start" : 1627997593119,
+    "stop" : 1627997593324,
+    "duration" : 205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53030da682c4fb03",
+  "name" : "Delete an activity",
+  "time" : {
+    "start" : 1627997592888,
+    "stop" : 1627997593111,
+    "duration" : 223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
