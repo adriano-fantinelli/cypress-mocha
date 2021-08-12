@@ -1,0 +1,109 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "Delete an activity",
+    "uid" : "a22785a332c38458",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730279204,
+      "stop" : 1628730279407,
+      "duration" : 203
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Must login without sucess and with an incorrect password",
+    "uid" : "591f8247ecea9f1f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730293455,
+      "stop" : 1628730296254,
+      "duration" : 2799
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Edit an activity",
+    "uid" : "af5bd68970099c32",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730279626,
+      "stop" : 1628730279821,
+      "duration" : 195
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Must login without success and with an incorrect email",
+    "uid" : "e27f7d0bff8ee48b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730289918,
+      "stop" : 1628730293433,
+      "duration" : 3515
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search for all activities",
+    "uid" : "384aecf83dcd47fc",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730278173,
+      "stop" : 1628730278949,
+      "duration" : 776
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Create an activity",
+    "uid" : "7ced9d47f4d67116",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730278982,
+      "stop" : 1628730279196,
+      "duration" : 214
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Must login successfully",
+    "uid" : "cdb5702068721df8",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730284351,
+      "stop" : 1628730289851,
+      "duration" : 5500
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search for an specific activity",
+    "uid" : "9b73128910622858",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1628730279415,
+      "stop" : 1628730279619,
+      "duration" : 204
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "timeline"
+}
