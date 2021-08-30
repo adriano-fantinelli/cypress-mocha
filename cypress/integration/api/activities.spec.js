@@ -3,7 +3,7 @@
 import activitySchema from '../../contracts/activity.contract'
 import activitiesSchema from '../../contracts/activities.contract'
 
-context('Activities', { tags: ['@regressivo', '@activities'] }, () => {
+context('Activities', { tags: ['@regression', '@activities'] }, () => {
   beforeEach(() => {
     cy.fixture('createActivity').as('createActivity')
     cy.fixture('editActivity').as('editActivity')
