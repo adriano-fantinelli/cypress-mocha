@@ -17,8 +17,8 @@ on:
         default: '@regression'
   pull_request:
     branches: [ master, release/develop ]
-  schedule:
-    - cron: "0 0 * * *"
+  # schedule:
+  #  - cron: "0 0 * * *"
     
 env:
   DEFAULT_AMB: "hlg"
