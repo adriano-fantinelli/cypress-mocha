@@ -4,26 +4,26 @@ on:
   workflow_dispatch:
     inputs:
       amb:
-        description: 'Selecionar algum destes ambientes: dev / hlg / prd'
+        description: 'Select an environment, for example: dev / hlg / prd'
         required: false
         default: 'hlg'
       browser:
-        description: 'Selecionar algum destes browsers: chrome / electron'
+        description: 'Select a browser, for example: chrome / electron'
         required: false
         default: 'chrome'
       tag:
-        description: 'Selecionar alguma tag, por exemplo: @regressivo / @smoke / @login'
+        description: 'Select a tag, for example: @regression / @smoke / @login'
         required: false
-        default: '@regressivo'
+        default: '@regression'
   pull_request:
     branches: [ master, release/develop ]
-  schedule:
-    - cron: "0 0 * * *"
+  # schedule:
+  #  - cron: "0 0 * * *"
     
 env:
   DEFAULT_AMB: "hlg"
   DEFAULT_BROWSER: "chrome"
-  DEFAULT_TAG: "@regressivo"
+  DEFAULT_TAG: "@regression"
 
 jobs:
   test:

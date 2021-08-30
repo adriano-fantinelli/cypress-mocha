@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import LoginPage from "../../support/pages/login";
 
-context('Login', { tags: ['@regressivo', '@login'] }, () => {
+context('Login', { tags: ['@regression', '@login'] }, () => {
   beforeEach(() => {
     cy.fixture('login').as('login')
     cy.visit("/")
