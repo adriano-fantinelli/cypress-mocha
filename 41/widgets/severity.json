@@ -1,0 +1,81 @@
+[ {
+  "uid" : "80ed56c1f04f8b75",
+  "name" : "Must login without sucess and with an incorrect password",
+  "time" : {
+    "start" : 1630367796749,
+    "stop" : 1630367800009,
+    "duration" : 3260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0afaecea808c8b",
+  "name" : "Create an activity",
+  "time" : {
+    "start" : 1630367781504,
+    "stop" : 1630367781714,
+    "duration" : 210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be721467e63a055",
+  "name" : "Search for an specific activity",
+  "time" : {
+    "start" : 1630367781925,
+    "stop" : 1630367782173,
+    "duration" : 248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75f9bc9a464143e3",
+  "name" : "Search for all activities",
+  "time" : {
+    "start" : 1630367780742,
+    "stop" : 1630367781494,
+    "duration" : 752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d28c839fd906a649",
+  "name" : "Delete an activity",
+  "time" : {
+    "start" : 1630367781718,
+    "stop" : 1630367781921,
+    "duration" : 203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d2ac8643ee77833",
+  "name" : "Edit an activity",
+  "time" : {
+    "start" : 1630367782178,
+    "stop" : 1630367782399,
+    "duration" : 221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4cd9176bedcd110a",
+  "name" : "Must login without success and with an incorrect email",
+  "time" : {
+    "start" : 1630367793557,
+    "stop" : 1630367796738,
+    "duration" : 3181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2fb392229c8f9117",
+  "name" : "Must login successfully",
+  "time" : {
+    "start" : 1630367786862,
+    "stop" : 1630367793536,
+    "duration" : 6674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
