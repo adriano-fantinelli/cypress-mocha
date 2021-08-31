@@ -5,7 +5,7 @@ const activitiesSchema = Joi.array().items(
     "id": Joi.number(),
     "title": Joi.string(),
     "dueDate": Joi.string(),
-    "completed": Joi.boolean(),
+    "completed": Joi.boolean()
   })
 )
 export default activitiesSchema
