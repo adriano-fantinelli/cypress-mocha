@@ -1,5 +1,5 @@
 {
-    "baseUrl" : "http://producao.com.br",
+    "baseUrl": "http://producao.com.br",
     "env": {
         "activitiesUrl": "http://producao.com.br",
         "allure": true
@@ -13,5 +13,6 @@
         "html": true,
         "json": true,
         "timestamp": "mmddyyyy_HHMMss"
-    }
+    },
+    "projectId": "pqrhjz"
 }

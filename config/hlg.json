@@ -1,17 +1,18 @@
 {
-  "baseUrl" : "http://automationpractice.com/index.php?controller=authentication&back=my-account",
+  "baseUrl": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
   "env": {
-      "activitiesUrl": "http://fakerestapi.azurewebsites.net/api/v1/Activities",
-      "allure": true
+    "activitiesUrl": "http://fakerestapi.azurewebsites.net/api/v1/Activities",
+    "allure": true
   },
   "viewportWidth": 1920,
   "viewportHeight": 1080,
   "reporter": "mochawesome",
   "reporterOptions": {
-      "reportDir": "cypress/report/mochawesome-report",
-      "overwrite": false,
-      "html": true,
-      "json": true,
-      "timestamp": "mmddyyyy_HHMMss"
-  }
+    "reportDir": "cypress/report/mochawesome-report",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "projectId": "pqrhjz"
 }

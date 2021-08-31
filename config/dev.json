@@ -1,17 +1,18 @@
 {
-  "baseUrl" : "http://http://dev.com.br",
+  "baseUrl": "http://http://dev.com.br",
   "env": {
-      "activitiesUrl": "http://dev.com.br",
-      "allure": true
+    "activitiesUrl": "http://dev.com.br",
+    "allure": true
   },
   "viewportWidth": 1920,
   "viewportHeight": 1080,
   "reporter": "mochawesome",
   "reporterOptions": {
-      "reportDir": "cypress/report/mochawesome-report",
-      "overwrite": false,
-      "html": true,
-      "json": true,
-      "timestamp": "mmddyyyy_HHMMss"
-  }
+    "reportDir": "cypress/report/mochawesome-report",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "projectId": "pqrhjz"
 }
