@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import LoginPage from "../../support/pages/login";
+import LoginPage from "../../support/pages/Login"
 
 context('Login', { tags: ['@regression', '@login'] }, () => {
   beforeEach(() => {

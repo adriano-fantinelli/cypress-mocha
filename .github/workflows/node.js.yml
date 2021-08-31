@@ -35,7 +35,7 @@ jobs:
       - name: Cypress run 
         uses: cypress-io/github-action@v2
         with: 
-          command: npx cypress run --config-file config/${{github.event.inputs.amb || env.DEFAULT_AMB}}.json --browser ${{github.event.inputs.browser || env.DEFAULT_BROWSER}} --env grepTags=${{github.event.inputs.tag || env.DEFAULT_TAG}}
+          command: npx cypress run --record --key 4c9b67e2-5cde-4b92-99b4-842e1a8801cd --config-file config/${{github.event.inputs.amb || env.DEFAULT_AMB}}.json --browser ${{github.event.inputs.browser || env.DEFAULT_BROWSER}} --env grepTags=${{github.event.inputs.tag || env.DEFAULT_TAG}}
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
