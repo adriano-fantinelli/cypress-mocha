@@ -1,0 +1,117 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Activities",
+    "children" : [ {
+      "name" : "Search for all activities",
+      "uid" : "aebbe57b1afa18ed",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370001148,
+        "stop" : 1630370001950,
+        "duration" : 802
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create an activity",
+      "uid" : "35cfb7d7585609eb",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370001966,
+        "stop" : 1630370002184,
+        "duration" : 218
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Delete an activity",
+      "uid" : "d6442f27e4fe9194",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370002187,
+        "stop" : 1630370002372,
+        "duration" : 185
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Search for an specific activity",
+      "uid" : "4b7a2524b17f1ad6",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370002375,
+        "stop" : 1630370002573,
+        "duration" : 198
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Edit an activity",
+      "uid" : "47e0316b246c4539",
+      "parentUid" : "2cd4d131100abe63102ae5294f4df98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370002576,
+        "stop" : 1630370002773,
+        "duration" : 197
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2cd4d131100abe63102ae5294f4df98e"
+  }, {
+    "name" : "Login",
+    "children" : [ {
+      "name" : "Must login successfully",
+      "uid" : "25e83ef933b2c523",
+      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370007214,
+        "stop" : 1630370025834,
+        "duration" : 18620
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Must login without success and with an incorrect email",
+      "uid" : "c8f5deebcdb3a9a6",
+      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370025906,
+        "stop" : 1630370040507,
+        "duration" : 14601
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Must login without sucess and with an incorrect password",
+      "uid" : "13faeb37b717a360",
+      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630370040574,
+        "stop" : 1630370054182,
+        "duration" : 13608
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1a85855463aca3ea10b8fe0fcb3372b8"
+  } ],
+  "name" : "suites"
+}
