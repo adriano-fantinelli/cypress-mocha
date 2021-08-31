@@ -1,4 +1,4 @@
-name: Execução automação de testes
+name: Execution
 
 on:
   workflow_dispatch:
