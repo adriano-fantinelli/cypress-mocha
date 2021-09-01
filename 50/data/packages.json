@@ -1,0 +1,109 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "Search for all activities",
+    "uid" : "ba0bd9485787918c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459212001,
+      "stop" : 1630459212691,
+      "duration" : 690
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search for an specific activity",
+    "uid" : "f14eb108c6c9f2cf",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459212707,
+      "stop" : 1630459212887,
+      "duration" : 180
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Create an activity",
+    "uid" : "a47ea38077f5e67e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459212890,
+      "stop" : 1630459213261,
+      "duration" : 371
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Delete an activity",
+    "uid" : "72782c0dcffbfb89",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459213264,
+      "stop" : 1630459213622,
+      "duration" : 358
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Edit an activity",
+    "uid" : "a31a559735db67e7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459213630,
+      "stop" : 1630459214175,
+      "duration" : 545
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Must login successfully",
+    "uid" : "ae01bcafa66f0a66",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459220405,
+      "stop" : 1630459228876,
+      "duration" : 8471
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Must login without success and with an incorrect email",
+    "uid" : "b032dde135c71eea",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459228915,
+      "stop" : 1630459231596,
+      "duration" : 2681
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Must login without sucess and with an incorrect password",
+    "uid" : "1e6ebf4215c7bc56",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1630459231621,
+      "stop" : 1630459234491,
+      "duration" : 2870
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "packages"
+}
