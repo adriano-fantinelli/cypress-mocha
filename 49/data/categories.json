@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "`cy.request()` failed on:\n\nhttp://fakerestapi.azurewebsites.net/api/v1/Activities/31\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://fakerestapi.azurewebsites.net/api/v1/Activities/31\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"accept\": \"application/json\",\n  \"content-type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/90.0.4430.212 Safari/537.36\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"transfer-encoding\": \"chunked\",\n  \"content-type\": \"application/problem+json; charset=utf-8; v=1.0\",\n  \"server\": \"Kestrel\",\n  \"api-supported-versions\": \"1.0\",\n  \"date\": \"Wed, 01 Sep 2021 01:12:22 GMT\"\n}\nBody: {\n  \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.4\",\n  \"title\": \"Not Found\",\n  \"status\": 404,\n  \"traceId\": \"00-93b913795ce45243b70a1d35fce9c349-7d2aeaf8b0e1ac44-00\"\n}\n\n\nhttps://on.cypress.io/request",
+      "children" : [ {
+        "name" : "Search for an specific activity",
+        "uid" : "265977de7a77e27b",
+        "parentUid" : "61f19bca5799349178e7106d4dd781aa",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630458743321,
+          "stop" : 1630458743750,
+          "duration" : 429
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "61f19bca5799349178e7106d4dd781aa"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
