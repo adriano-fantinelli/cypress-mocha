@@ -17,7 +17,7 @@ context('Activities', { tags: ['@regression', '@activities'] }, () => {
   })
 
   it('Search for an specific activity', function () {
-    cy.getActivityApi(30).then((response) => {
+    cy.getActivityApi(this.createActivity.Id).then((response) => {
       expect(response.status).to.eq(200)
       activitySchema.validateAsync(response.body)
     })
