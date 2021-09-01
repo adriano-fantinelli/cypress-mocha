@@ -7,6 +7,7 @@ context('Activities', { tags: ['@regression', '@activities'] }, () => {
   beforeEach(() => {
     cy.fixture('createActivity').as('createActivity')
     cy.fixture('editActivity').as('editActivity')
+    cy.fixture('findActivity').as('findActivity')
   })
 
   it('Search for all activities', { tags: ['@smoke'] }, function () {
@@ -17,7 +18,7 @@ context('Activities', { tags: ['@regression', '@activities'] }, () => {
   })
 
   it('Search for an specific activity', function () {
-    cy.getActivityApi(this.createActivity.Id).then((response) => {
+    cy.getActivityApi(this.findActivity.Id).then((response) => {
       expect(response.status).to.eq(200)
       activitySchema.validateAsync(response.body)
     })
