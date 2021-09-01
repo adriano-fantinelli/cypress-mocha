@@ -1,0 +1,238 @@
+{
+  "uid" : "aed4fe4ae0260d08",
+  "name" : "Edit an activity",
+  "fullName" : "Edit an activity",
+  "historyId" : "78f29e82e11dc4bd2c72cc59e1679959",
+  "time" : {
+    "start" : 1630458344735,
+    "stop" : 1630458345251,
+    "duration" : 516
+  },
+  "status" : "failed",
+  "statusMessage" : "_activity.default.valIdateAsync is not a function",
+  "statusTrace" : "TypeError: _activity.default.valIdateAsync is not a function\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/api/activities.spec.js:230:25)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "_activity.default.valIdateAsync is not a function",
+    "statusTrace" : "TypeError: _activity.default.valIdateAsync is not a function\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/api/activities.spec.js:230:25)",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1630458344736,
+        "stop" : 1630458344775,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"createActivity\")",
+        "time" : {
+          "start" : 1630458344774,
+          "stop" : 1630458344774,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"createActivity\")",
+        "time" : {
+          "start" : 1630458344774,
+          "stop" : 1630458344774,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fixture (\"editActivity\")",
+        "time" : {
+          "start" : 1630458344774,
+          "stop" : 1630458344774,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"editActivity\")",
+        "time" : {
+          "start" : 1630458344774,
+          "stop" : 1630458344774,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "postActivityApi (\"31\"; \"Edited Activity\"; \"2020-09-16T14:45:28.007Z\"; \"true\")",
+      "time" : {
+        "start" : 1630458344776,
+        "stop" : 1630458344883,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1630458344776,
+          "stop" : 1630458344883,
+          "duration" : 107
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "putActivityApi (\"31\"; \"Test Activity\"; \"2020-09-15T14:45:28.007Z\"; \"true\")",
+      "time" : {
+        "start" : 1630458344883,
+        "stop" : 1630458344992,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1630458344883,
+          "stop" : 1630458344992,
+          "duration" : 109
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "function(){} then",
+      "time" : {
+        "start" : 1630458345251,
+        "stop" : 1630458345251,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1630458345251,
+        "stop" : 1630458345251,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "api/activities.spec.js.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    }, {
+      "uid" : "da24e18e5008be43",
+      "name" : "api/activities.spec.js:2021-09-01T01:05:45.017Z",
+      "source" : "da24e18e5008be43.png",
+      "type" : "image/png",
+      "size" : 92321
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Activities"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "aed4fe4ae0260d08.json",
+  "parameterValues" : [ ]
+}

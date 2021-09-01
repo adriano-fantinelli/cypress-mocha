@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "_activities.default.valIdateAsync is not a function",
+      "children" : [ {
+        "name" : "Search for all activities",
+        "uid" : "58f19966eb908d58",
+        "parentUid" : "5b2d31bfcb553ecf55073439a5ba1597",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630458342941,
+          "stop" : 1630458343588,
+          "duration" : 647
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5b2d31bfcb553ecf55073439a5ba1597"
+    }, {
+      "name" : "`cy.request()` failed on:\n\nhttp://fakerestapi.azurewebsites.net/api/v1/Activities/31\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://fakerestapi.azurewebsites.net/api/v1/Activities/31\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"accept\": \"application/json\",\n  \"content-type\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/90.0.4430.212 Safari/537.36\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"transfer-encoding\": \"chunked\",\n  \"content-type\": \"application/problem+json; charset=utf-8; v=1.0\",\n  \"server\": \"Kestrel\",\n  \"api-supported-versions\": \"1.0\",\n  \"date\": \"Wed, 01 Sep 2021 01:05:42 GMT\"\n}\nBody: {\n  \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.4\",\n  \"title\": \"Not Found\",\n  \"status\": 404,\n  \"traceId\": \"00-f0fabf324671e845b8b92d56bd669a23-74d74267037bd148-00\"\n}\n\n\nhttps://on.cypress.io/request",
+      "children" : [ {
+        "name" : "Search for an specific activity",
+        "uid" : "c11be74dd43f8ba7",
+        "parentUid" : "83634dfd3f9dce8aa9eb20597a56e2ff",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630458343628,
+          "stop" : 1630458344041,
+          "duration" : 413
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "83634dfd3f9dce8aa9eb20597a56e2ff"
+    }, {
+      "name" : "_activity.default.valIdateAsync is not a function",
+      "children" : [ {
+        "name" : "Create an activity",
+        "uid" : "3f7ea397be1d5f0b",
+        "parentUid" : "e11171cdf864de3c71edf7f1dbef0a7d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630458344058,
+          "stop" : 1630458344414,
+          "duration" : 356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Edit an activity",
+        "uid" : "aed4fe4ae0260d08",
+        "parentUid" : "e11171cdf864de3c71edf7f1dbef0a7d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630458344735,
+          "stop" : 1630458345251,
+          "duration" : 516
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e11171cdf864de3c71edf7f1dbef0a7d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
