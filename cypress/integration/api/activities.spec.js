@@ -7,26 +7,27 @@ context('Activities', { tags: ['@regression', '@activities'] }, () => {
   beforeEach(() => {
     cy.fixture('createActivity').as('createActivity')
     cy.fixture('editActivity').as('editActivity')
+    cy.fixture('findActivity').as('findActivity')
   })
 
   it('Search for all activities', { tags: ['@smoke'] }, function () {
     cy.getActivitiesApi().then((response) => {
       expect(response.status).to.eq(200)
-      activitiesSchema.valIdateAsync(response.body)
+      activitiesSchema.validateAsync(response.body)
     })
   })
 
   it('Search for an specific activity', function () {
-    cy.getActivityApi(this.createActivity.Id).then((response) => {
+    cy.getActivityApi(this.findActivity.Id).then((response) => {
       expect(response.status).to.eq(200)
-      activitySchema.valIdateAsync(response.body)
+      activitySchema.validateAsync(response.body)
     })
   })
 
   it('Create an activity', function () {
     cy.postActivityApi(this.createActivity.Id, this.createActivity.Title, this.createActivity.DueDate, this.createActivity.Completed).then((response) => {
       expect(response.status).to.eq(200)
-      activitySchema.valIdateAsync(response.body)
+      activitySchema.validateAsync(response.body)
     })
     cy.deleteActivityApi(this.createActivity.Id)
   })
@@ -42,7 +43,7 @@ context('Activities', { tags: ['@regression', '@activities'] }, () => {
     cy.postActivityApi(this.createActivity.Id, this.createActivity.Title, this.createActivity.DueDate, this.createActivity.Completed)
     cy.putActivityApi(this.editActivity.Id, this.editActivity.Title, this.editActivity.DueDate, this.editActivity.Completed).then((response) => {
       expect(response.status).to.eq(200)
-      activitySchema.valIdateAsync(response.body)
+      activitySchema.validateAsync(response.body)
     })
     cy.deleteActivityApi(this.createActivity.Id)
   })
