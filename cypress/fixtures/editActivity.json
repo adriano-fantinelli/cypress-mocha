@@ -1,6 +1,6 @@
 {
-  "Id": 31,
-  "Title": "Test Activity",
-  "DueDate": "2020-09-15T14:45:28.007Z",
-  "Completed": true
+  "id": 31,
+  "title": "Test Activity",
+  "dueDate": "2020-09-15T14:45:28.007Z",
+  "completed": true
 }
