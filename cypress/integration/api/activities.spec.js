@@ -18,33 +18,33 @@ context('Activities', { tags: ['@regression', '@activities'] }, () => {
   })
 
   it('Search for an specific activity', function () {
-    cy.getActivityApi(this.findActivity.Id).then((response) => {
+    cy.getActivityApi(this.findActivity.id).then((response) => {
       expect(response.status).to.eq(200)
       activitySchema.validateAsync(response.body)
     })
   })
 
   it('Create an activity', function () {
-    cy.postActivityApi(this.createActivity.Id, this.createActivity.Title, this.createActivity.DueDate, this.createActivity.Completed).then((response) => {
+    cy.postActivityApi(this.createActivity.id, this.createActivity.title, this.createActivity.dueDate, this.createActivity.completed).then((response) => {
       expect(response.status).to.eq(200)
       activitySchema.validateAsync(response.body)
     })
-    cy.deleteActivityApi(this.createActivity.Id)
+    cy.deleteActivityApi(this.createActivity.id)
   })
 
   it('Delete an activity', function () {
-    cy.postActivityApi(this.createActivity.Id, this.createActivity.Title, this.createActivity.DueDate, this.createActivity.Completed)
-    cy.deleteActivityApi(this.createActivity.Id).then((response) => {
+    cy.postActivityApi(this.createActivity.id, this.createActivity.title, this.createActivity.dueDate, this.createActivity.completed)
+    cy.deleteActivityApi(this.createActivity.id).then((response) => {
       expect(response.status).to.eq(200)
     })
   })
 
   it('Edit an activity', function () {
-    cy.postActivityApi(this.createActivity.Id, this.createActivity.Title, this.createActivity.DueDate, this.createActivity.Completed)
-    cy.putActivityApi(this.editActivity.Id, this.editActivity.Title, this.editActivity.DueDate, this.editActivity.Completed).then((response) => {
+    cy.postActivityApi(this.createActivity.id, this.createActivity.title, this.createActivity.dueDate, this.createActivity.completed)
+    cy.putActivityApi(this.editActivity.id, this.editActivity.title, this.editActivity.dueDate, this.editActivity.completed).then((response) => {
       expect(response.status).to.eq(200)
       activitySchema.validateAsync(response.body)
     })
-    cy.deleteActivityApi(this.createActivity.Id)
+    cy.deleteActivityApi(this.createActivity.id)
   })
 })
