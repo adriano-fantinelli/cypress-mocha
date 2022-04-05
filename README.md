@@ -1,26 +1,22 @@
-# :alien: Cypress :alien:
+# Cypress
 
 Test automation project using Cypress for Front-end Web and Back-end tests. We will use the http://automationpractice.com/index.php?controller=authentication&back=my-account environment to perform the tests on the Front-end and the API http://fakerestapi.azurewebsites.net/index.html to the tests on the Back-end. You can switch to any other environment that you want.
 
-## :point_right: Technologies :point_left:	
+## Technologies
 
 - Node.js
 - JavaScript
 - Cypress
 
-## :man_technologist:	Setting up the environment :woman_technologist:	
+## Setting up the environment
 
 1. Install Node.js.
 
-2. It is necessary to install Cypress, type on the command prompt:
+2. It is necessary to install dependecies, type on the command prompt:
 ```
-npm install cypress
+npm i
 ```
-3. To create the file package.json, type:
-```
-npm init
-```
-4. To open the execution of the tests use: 
+3. To open the execution of the tests use: 
 ```
 npx cypress open
 ```
