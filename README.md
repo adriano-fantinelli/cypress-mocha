@@ -1,4 +1,4 @@
-# Cypress
+# Cypress Mocha
 
 Test automation project using Cypress for Front-end Web and Back-end tests. We will use the http://automationpractice.com/index.php?controller=authentication&back=my-account environment to perform the tests on the Front-end and the API http://fakerestapi.azurewebsites.net/index.html to the tests on the Back-end. You can switch to any other environment that you want.
 
