@@ -31,7 +31,13 @@ jobs:
     runs-on: ubuntu-latest
     container: cypress/browsers:node14.16.0-chrome90-ff88
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Write the cypress.env.json file
+        run: |
+          echo '${{ secrets.CYPRESS_ENV_CI }}' > cypress.env.json
+      
       - name: Cypress run 
         uses: cypress-io/github-action@v2
         with: 
