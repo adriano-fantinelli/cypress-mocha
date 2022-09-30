@@ -8,7 +8,6 @@ context('Login', { tags: ['@regression', '@login'] }, () => {
   })
 
   it('Must login successfully', { tags: ['@smoke'] }, function () {
-    console.log(Cypress.env('teste'))
     LoginPage.login(this.login.loginSuccess.email, this.login.loginSuccess.password)
     cy.get('.account > span').should('have.text', 'Novo email')
   })
